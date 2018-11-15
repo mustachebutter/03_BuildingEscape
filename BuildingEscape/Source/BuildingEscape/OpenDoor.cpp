@@ -20,7 +20,7 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	OpenDoor();
+
 }
 
 void UOpenDoor::OpenDoor()
