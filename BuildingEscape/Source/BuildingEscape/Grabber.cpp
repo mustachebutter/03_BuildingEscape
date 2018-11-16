@@ -33,7 +33,7 @@ void UGrabber::BeginPlay()
 	}
 	else
 	{
-		UE_LOG(LogTemp,Error,TEXT("%s handle is missing "), GetOwner()->GetName())
+		UE_LOG(LogTemp, Error, TEXT("%s physics handle is missing "), *GetOwner()->GetName());
 	}
 }
 
