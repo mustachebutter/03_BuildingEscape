@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Components/InputComponent.h"
+#include "Engine/EngineTypes.h"
 #include "Grabber.generated.h"
 
 
@@ -35,7 +36,17 @@ private:
 
 	//Ray-cast and grab what's in reach
 	void Grab();
+
 	// Call when grab is released
 	void Release();
+
+	//Find physics handle component
+	void FindPhysicsHandleComponent();
+
+	//Setup attached input component
+	void SetupInputComponent();
+
+	//Return hit for first physics body in reach
+	const FHitResult GetFirstPhysicsBodyInReach();
 
 };
